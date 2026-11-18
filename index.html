@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios 2 · 2º Bimestre</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <p>FUNDAMENTOS DE PROGRAMAÇÃO PARA WEB · 2º BIMESTRE</p>
+        <h1>Exercícios 2</h1>
+        <p class="apoio">Informe os valores para fazer cada cálculo.</p>
+    </header>
+    <main>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 01</span>
+            <h2>Área do terreno</h2>
+            <p class="descricao">Calcule a área de um terreno retangular.</p>
+            <form data-exercicio="1"><div class="campos"><label>Comprimento (m)<input name="comprimento" type="number" min="0" step="any" required></label><label>Largura (m)<input name="largura" type="number" min="0" step="any" required></label></div><button>Calcular área</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 02</span>
+            <h2>Ferraduras para o haras</h2>
+            <p class="descricao">Cada cavalo precisa de quatro ferraduras.</p>
+            <form data-exercicio="2"><div class="campos"><label>Quantidade de cavalos<input name="cavalos" type="number" min="0" step="1" required></label></div><button>Calcular ferraduras</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 03</span>
+            <h2>Venda da padaria</h2>
+            <p class="descricao">Pão francês: R$ 0,12. Broa: R$ 1,50. Calcule a arrecadação e os 10% para poupança.</p>
+            <form data-exercicio="3"><div class="campos"><label>Quantidade de pães<input name="paes" type="number" min="0" step="1" required></label><label>Quantidade de broas<input name="broas" type="number" min="0" step="1" required></label></div><button>Calcular vendas</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 04</span>
+            <h2>Dias de vida</h2>
+            <p class="descricao">Use 365 dias por ano completo.</p>
+            <form data-exercicio="4"><div class="campos"><label>Nome<input name="nome" type="text" required></label><label>Idade em anos<input name="idade" type="number" min="0" step="1" required></label></div><button>Calcular dias</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 05</span>
+            <h2>Abastecimento</h2>
+            <p class="descricao">Calcule quantos litros podem ser comprados com o valor informado.</p>
+            <form data-exercicio="5"><div class="campos"><label>Preço por litro (R$)<input name="preco" type="number" min="0.01" step="any" required></label><label>Valor pago (R$)<input name="valor" type="number" min="0" step="any" required></label></div><button>Calcular litros</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 06</span>
+            <h2>Refeição por quilo</h2>
+            <p class="descricao">O restaurante cobra R$ 12,00 por quilo.</p>
+            <form data-exercicio="6"><div class="campos"><label>Peso da refeição (kg)<input name="peso" type="number" min="0" step="any" required></label></div><button>Calcular valor</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 07</span>
+            <h2>Dias desde o início do ano</h2>
+            <p class="descricao">Considere que todos os meses têm 30 dias.</p>
+            <form data-exercicio="7"><div class="campos"><label>Dia<input name="dia" type="number" min="1" max="30" step="1" required></label><label>Mês<input name="mes" type="number" min="1" max="12" step="1" required></label></div><button>Calcular dias</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 08</span>
+            <h2>Venda de camisetas</h2>
+            <p class="descricao">Pequena: R$ 10,00. Média: R$ 12,00. Grande: R$ 15,00.</p>
+            <form data-exercicio="8"><div class="campos"><label>Quantidade pequena<input name="pequena" type="number" min="0" step="1" required></label><label>Quantidade média<input name="media" type="number" min="0" step="1" required></label><label>Quantidade grande<input name="grande" type="number" min="0" step="1" required></label></div><button>Calcular arrecadação</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 09</span>
+            <h2>Distância entre pontos</h2>
+            <p class="descricao">Calcule a distância entre dois pontos do plano cartesiano.</p>
+            <form data-exercicio="9"><div class="campos quatro"><label>Ponto 1 · x<input name="x1" type="number" step="any" required></label><label>Ponto 1 · y<input name="y1" type="number" step="any" required></label><label>Ponto 2 · x<input name="x2" type="number" step="any" required></label><label>Ponto 2 · y<input name="y2" type="number" step="any" required></label></div><button>Calcular distância</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 10</span>
+            <h2>Tempo sem acidentes</h2>
+            <p class="descricao">Converta o total de dias em anos, meses e dias (30 dias por mês).</p>
+            <form data-exercicio="10"><div class="campos"><label>Total de dias<input name="dias" type="number" min="0" step="1" required></label></div><button>Converter tempo</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 11</span>
+            <h2>Aumento e impostos</h2>
+            <p class="descricao">Aplique aumento de 15% e depois desconte 8% de impostos.</p>
+            <form data-exercicio="11"><div class="campos"><label>Salário inicial (R$)<input name="salario" type="number" min="0" step="any" required></label></div><button>Calcular salário</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 12</span>
+            <h2>Centena, dezena e unidade</h2>
+            <p class="descricao">Informe um número inteiro de até três dígitos.</p>
+            <form data-exercicio="12"><div class="campos"><label>Número inteiro<input name="numero" type="number" min="0" max="999" step="1" required></label></div><button>Separar dígitos</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 13</span>
+            <h2>Área da pizza</h2>
+            <p class="descricao">Use π = 3,14.</p>
+            <form data-exercicio="13"><div class="campos"><label>Raio (cm)<input name="raio" type="number" min="0" step="any" required></label></div><button>Calcular área</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <span class="numero">EXERCÍCIO 14</span>
+            <h2>Divisão da conta do bar</h2>
+            <p class="descricao">Carlos e André pagam valores inteiros em reais; Felipe paga o restante.</p>
+            <form data-exercicio="14"><div class="campos"><label>Valor total da conta (R$)<input name="conta" type="number" min="0" step="0.01" required></label></div><button>Dividir conta</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+    </main>
+</body>
+</html>
